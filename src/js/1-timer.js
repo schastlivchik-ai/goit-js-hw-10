@@ -15,7 +15,8 @@ function activateButton(currentDate) {
         button.disabled = false;
     } else {
         iziToast.show({
-            message: 'Please choose a date in the future'
+            title: `Error`,
+            message: 'Illegal operation'
         });
         button.disabled = true;
     };
